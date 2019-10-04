@@ -1,0 +1,113 @@
+:root{
+    --primary-color: #ffeaa7;
+    --white: #ffffee;
+    --secondary-color: #2980b9;
+    --background: #3498db;
+    --text-color: #2d3436;
+    --shadow-1: 3px 5px 6px rgba(0,0,0,0.3);
+    --shadow-2: 2px 3px 4px rgba(0,0,0,0.3);
+    --size: 18rem;;
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    color: var(--text-color);
+}
+
+.main{
+    font-size: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    background:var(--background);
+}
+.error404{
+    width: 100vw;
+    /* background-color: #473; */
+    display: flex;
+    justify-content: center;
+}
+.errrorMessage{
+    background-color:var(--primary-color);
+    width: 50%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: var(--shadow-1);
+    text-align: center;
+
+}
+.first__four,
+.second__four{
+    display: flex;
+}
+.first__four{
+    margin-right: 2rem;
+}
+
+.first__four--bar-1,
+.second__four--bar-1
+{
+    width: 8vw;
+    height: 13rem;
+    background-color: var(--white);
+    margin-right: 0.5rem;
+    box-shadow: var(--shadow-2);
+    border-radius: 2px;
+
+}
+.first__four--bar-2,
+.second__four--bar-2{
+    width: 8vw;
+    height: 18rem;
+    background-color: var(--secondary-color);
+    box-shadow: var(--shadow-2);
+    border-radius: 2px;
+}
+.zero{
+    position: relative;
+    margin-right: 2rem;
+}
+.zero__full{
+    height: 18rem;
+    width: 18rem;
+    background: #fff;
+    border-radius: 50%;
+    border: 0.5px solid var(--secondary-color);
+    box-shadow: var(--shadow-2);
+
+}
+.zero__half{
+    height: 9rem;
+    width: 18rem;
+    background: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-bottom-left-radius: calc( 18rem * 2);
+    border-bottom-right-radius: calc( 18rem * 2);
+    box-shadow: 0 -2px 3px rgba(0,0,0,0.6);
+}
+
+.message--1{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+.message--2{
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(202, 201, 201, 0.3);
+}
+
